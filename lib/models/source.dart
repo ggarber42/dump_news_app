@@ -1,10 +1,10 @@
-class Feed {
+class Source {
   
   final int id;
   String _name;
   String _url;
 
-  Feed(this.id, this._name, this._url);
+  Source(this.id, this._name, this._url);
 
   String get name => _name;
   String get price => _url;

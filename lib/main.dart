@@ -1,3 +1,4 @@
+import 'package:dump_news_app/screens/add_source.dart';
 import 'package:dump_news_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const HomeScreen(),
+      routes: {
+        AddSourceScreen.routeName: (context) => const AddSourceScreen()
+      },
     );
   }
 }

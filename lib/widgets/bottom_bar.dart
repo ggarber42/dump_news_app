@@ -1,5 +1,3 @@
-import 'package:dump_news_app/screens/add_feed.dart';
-import 'package:dump_news_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -14,11 +12,10 @@ class _BottomBarState extends State<BottomBar> {
   void _updateIndex(int newIndex) {
     switch (newIndex) {
       case 0:
-        Navigator.of(context)
-            .pushReplacementNamed(HomeScreen.routeName);
+        print('wwwww');
         break;
       case 1:
-        Navigator.of(context).pushReplacementNamed(AddFeedScreeen.routeName);
+        print('kkkk');
         break;
       default:
         break;
@@ -34,8 +31,8 @@ class _BottomBarState extends State<BottomBar> {
           label: 'Home',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.add_circle),
-          label: 'Add feed',
+          icon: Icon(Icons.question_mark),
+          label: 'Dunno',
         ),
       ],
       currentIndex: widget.currentIndex,

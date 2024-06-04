@@ -1,5 +1,6 @@
-import 'package:dump_news_app/widgets/bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:dump_news_app/widgets/top_bar.dart';
+import 'package:dump_news_app/widgets/bottom_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   static const routeName = '/home';
@@ -8,9 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Dump News'),
-      ),
+      appBar: const TopBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
